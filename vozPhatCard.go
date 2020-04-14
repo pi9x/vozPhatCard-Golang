@@ -7,8 +7,8 @@ import (
 	s "strings"
 )
 
-const Keyword = "#phatcard"
-const BotToken = "1058843020:AAH-iNx3A-4O_PGo6B2YTgJv5R4OTzidplg"
+const Keyword = "keyword" // Example: "#phatcard"
+const BotToken = "YOUR_BOT_TOKEN_HERE"
 
 var clickRecords []string // Record clickers (string: MessageID + UserID)
 
