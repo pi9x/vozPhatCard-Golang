@@ -3,12 +3,15 @@ package main
 import (
 	"./telegram-bot-api"
 	"./vozHelpers"
+	"os"
 	"strconv"
 	s "strings"
 )
 
-const Keyword = "keyword" // Example: "#phatcard"
-const BotToken = "YOUR_BOT_TOKEN_HERE"
+var (
+	Keyword  = os.Getenv("KEYWORD")
+	BotToken = os.Getenv("BOTTOKEN")
+)
 
 var clickRecords []string // Record clickers (string: MessageID + UserID)
 
